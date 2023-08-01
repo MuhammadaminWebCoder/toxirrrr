@@ -35,10 +35,10 @@
 <div class="shadow pb-5">
                   <div class="container mx-auto px-3 row">
                   <div v-for="category in products" key="category.id" class="col-3">
-                  <div @click="catId(category)" class="col-12 p-0">
+                  <div @click="catId(category.id)" class="col-12 p-0">
                         <img class="rounded w-100" style="height: 360px;" :src="category.image">
                         <p class="fw-bold fs-17 h-80 mt-2 mb-0">{{ category.title }}</p>
-                        <p class="fw-bold fs-5">{{ category.id }} {{ category.price }}</p>
+                        <p class="fw-bold fs-5"></p>
                   </div>
                   </div>
                   <div :class="{add: drawer === true}" v-for="category in categories" key="category.id" class="col-3" style="display: none;">
@@ -102,7 +102,7 @@
   },
 methods: {
       catId(category){
-            this.$router.push(`/seecategory${category}`)
+            // this.$router.push(`/seecategory${category}`)
       },
       async getCategory() {
       const data = await fetch("https://fakestoreapi.com/products");

@@ -142,7 +142,33 @@ body {
   outline: none;
 }
 .loginimg{
-  background-image: url('/public/images/loginimg.svg');
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  z-index: -9999;
+}
+.imgl{
+  width: 275px;
+  height: 275px; 
+  position: absolute;
+  left: 10%; 
+  bottom: 20%; 
+  padding: 55px;
+  background: white;
+  border-top-left-radius: 220px; 
+  border-top-right-radius: 220px;
+    border-bottom-right-radius: 220px;
+  border-bottom-left-radius: 25px;
+}
+.hh{
+  height: 100vh;
+}
+.me-14{
+  margin-left: 20px;
+}
+.me-8{
+  margin-left: 180px;
 }
 .br-5{
   border-radius: 50px;

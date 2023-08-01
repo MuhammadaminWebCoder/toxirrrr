@@ -51,8 +51,18 @@ export default {
                   </div>
             </div>
             <div v-if="$route.path == '/changecategory' || $route.path == '/login' || $route.path == '/shop' || $route.path == '/productPlus' || $route.path == '/seecategory'" class="nav w-100 my-2 d-flex justify-content-between">
-                  <div class="kategory-serch w-78 d-flex br-5">
-                               
+                  <div class="kategory-serch align-items-center w-78 d-flex br-5">
+                        <select name="sel" id="select" class="border-none">
+                              <option value="lublu-cat">Любая категория &#9660;</option>
+                              <option value="lublu-cat">Любая категория</option>
+                              <option value="lublu-cat">Любая категория</option>
+                        </select>
+                        <input type="text" class="w-100" placeholder="chto budem iskat ?">
+                        <select name="sel" id="select" class="border-none">
+                              <option value="lublu-cat">Любая категория &#9660;</option>
+                              <option value="lublu-cat">Любая категория</option>
+                              <option value="lublu-cat">Любая категория</option>
+                        </select>
                         <div class="bg-succes px-5 h-5">nayti</div>
                   </div>
                   <div class="plus-category w-22 bg-succes pe-5 d-flex align-items-center">
@@ -62,8 +72,24 @@ export default {
                         <div class="text bg-succes ms-5">Добавить обьявления</div>
                   </div>
             </div>
-            <div v-if="$route.path == '/changecategory'" style="display: flex;" class="nav w-100 my-2 justify-content-between">
-            
+            <div v-if="$route.path == '/changecategory'" style="display: flex;" class="nav border-bottom pb-2 align-items-center justify-content-between w-100 my-2 justify-content-between">
+                  <span class="d-block fs-17">Здравствуйте Зухриддин Темиров</span>
+                  <div class="d-flex align-items-center">
+                        <a href="#" class="fs-5 me-3 silka">Ваш счет: 2 3000 сум</a><a href="#" class="export me-5"><i class="fal fa-light fa-plus pb-3"></i> Поднять</a>
+                  </div>
+            </div>
+            <div v-if="$route.path == '/changecategory'" style="display: flex;" class="nav align-items-center justify-content-between w-100 my-2 justify-content-between">
+                  <div class="pages d-flex">
+                  <div class="new-refresh active span fs-5 fw-400 position-relative me-5">
+                        Новые объявления
+                        <span class="liner"></span>
+                  </div>
+                  <div class="hot-category span fw-400 fs-5 position-relative ms-5">
+                        Лучщие предложение
+                        <span class="liner"></span>
+                  </div>
+            </div>
+            <hr>
             </div>
       </div>
       </div>

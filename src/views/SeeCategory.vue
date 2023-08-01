@@ -76,19 +76,18 @@
 export default {
   data() {
     return {
-      products: [],
-      firstProduct: {}
+      firstProduct: {},
+      productId: '',
     }
   },
   async created() {
     await this.getCategory();
-    this.firstProduct = this.products[0];
   },
   methods: {
     async getCategory() {
-      const data = await fetch("https://fakestoreapi.com/products");
+      const data = await fetch(`https://fakestoreapi.com/products/${this.$route.path.split('/seecategory')[1]}`);
       const json = await data.json();
-      this.products = json;
+      this.firstProduct = json;
     }
   }
 }

@@ -1,6 +1,13 @@
 <template>
-      <div class="bg-light w-100">
+      <div class="bg-light pb-5 w-100">
             <div class="container">
+                  <div class="py-2 d-flex">
+                        <span class="d-block me-5 ms-3">Foto</span>
+                        <span class="d-block me-14">nazivanie</span>
+                        <span class="d-block me-8">sena</span>
+                        <span class="d-block me-8">data</span>
+                        <span class="d-block me-8">deystvie</span>
+                  </div>
                         <div v-for="user in 3">
                               <div class="d-flex bg-white py-5 align-items-center w-100">
                               <div class="avatar ms-3 me-5 rounded-circle">
@@ -14,7 +21,10 @@
                               <i class="fas fa-ellipsis-h ms-5 d-flex align-items-center shadow avatar"></i>
                         </div>
                         <div class="d-flex bg-white mt-1 mb-4 py-3 ps-3">
-                              <p v-for="user in 3" class="m-0 me-4">Статистика</p>
+                              <p class="m-0 me-4 text-primary">Статистика</p>
+                              <p class="m-0 me-4">Статистика</p>
+                              <p class="m-0 me-4">Статистика</p>
+                              <p class="m-0 me-4">Статистика</p>
                         </div>
                         </div>
             </div>

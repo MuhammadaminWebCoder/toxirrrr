@@ -55,7 +55,15 @@ export default{
           <a href="#" class="silka">Восстоновить ваше пароль</a>
           </div>
         </div>
-        <div class="image loginimg w-50">
+        <div class="image hh position-relative w-50">
+          <img src="../assets/loginimg.svg" class="loginimg">
+          <div class="imgl">
+            <img src="/public/icons/kivi (2).svg">
+            <span class="d-block span fw-400 py-3 fs-17">Откройте для себя <br>
+            целую плошадку<br>
+            для продаже</span>
+            <button class="btn btn-outline-success">kak eto delat ?</button>
+          </div>
         </div>
       </div>
 </template>
